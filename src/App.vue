@@ -1,27 +1,13 @@
 <template>
-  <div id="app">
-    <div class="wm" @click="handleClick">{{massage}}</div>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
   export default {
-    name: 'app',
-    data () {
-      return {
-        massage: 'hello world'
-      }
-    },
-    methods: {
-      handleClick () {
-        this.massage = 'bye world'
-      }
-    }
-}
+    name: 'app'
+  }
 </script>
 
 <style scoped>
-  .wm {
-    color:green;
-  }
+
 </style>
